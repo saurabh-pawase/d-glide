@@ -29,7 +29,7 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">D-glide</a></h1>
+        <!-- <h1><a href="index.html">D-glide</a></h1> -->
         <nav id="nav">
           <ul>
             <li class="special">
@@ -55,7 +55,7 @@
           <p>
             Your ultimate platform for<br />
             data analytics and insights.<br />
-            Powered by <a href="https://devui.dglide.com">D-Glide</a>.
+            Powered by <a href="#">D-Glide</a>.
           </p>
           <ul class="actions special">
             <li><a href="#" class="button primary">Get Started</a></li>
@@ -206,6 +206,7 @@
                     id="name"
                     value=""
                     placeholder="Name"
+                    required
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
@@ -215,21 +216,36 @@
                     id="email"
                     value=""
                     placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="col-6 col-12-xsmall">
+                  <input
+                    type="text"
+                    name="organization"
+                    id="organization"
+                    value=""
+                    placeholder="Organization"
+                  />
+                </div>
+                <div class="col-6 col-12-xsmall">
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    value=""
+                    placeholder="Phone"
+                    required
                   />
                 </div>
                 <div class="col-12">
-                  <select name="category" id="category" class="custom-select">
-                    <option value="">- Category -</option>
-                    <option value="1">Admin</option>
-                    <option value="2">Manager</option>
-                    <option value="3">Customer</option>
-                    <option value="4">Resources</option>
-                  </select>
-                </div>
-
-                <div class="col-6 col-12-small">
-                  <input type="checkbox" id="copy" name="copy" />
-                  <label for="copy">Email me a copy</label>
+                  <input
+                    type="datetime-local"
+                    id="date-time"
+                    name="date-time"
+                    value=""
+                    title="Please select a good time to connect with me"
+                  />
                 </div>
 
                 <div class="col-12">
@@ -239,6 +255,10 @@
                     placeholder="Enter your message"
                     rows="6"
                   ></textarea>
+                </div>
+                <div class="col-6 col-12-small">
+                  <input type="checkbox" id="copy" name="copy" />
+                  <label for="copy"> Send me an email with a copy.</label>
                 </div>
                 <div class="col-12">
                   <ul class="actions">
@@ -286,9 +306,7 @@
         <ul class="copyright">
           <ul class="copyright">
             <li>&copy; 2024 Data Glide</li>
-            <li>
-              Website Design: <a href="https://devui.dglide.com">D-Glide</a>
-            </li>
+            <li>Website <a href="#">D-Glide</a></li>
           </ul>
         </ul>
       </footer>

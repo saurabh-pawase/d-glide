@@ -197,7 +197,7 @@ body,
 input,
 select,
 textarea {
-  color: #fff;
+  color: #ffffff7a;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 400;
@@ -1930,6 +1930,8 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="datetime-local"],
+input[type="number"],
 select,
 textarea {
   -moz-appearance: none;
@@ -1958,6 +1960,8 @@ textarea:invalid {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus,
 select:focus,
 textarea:focus {
   box-shadow: 0 0 0 2px #21b2a6;
@@ -1983,7 +1987,8 @@ select::-ms-expand {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-select {
+input[type="datetime-local"],
+input[type="number"] {
   height: 2.75em;
 }
 
@@ -2951,6 +2956,8 @@ button:disabled,
 .wrapper.style1 input[type="text"],
 .wrapper.style1 input[type="password"],
 .wrapper.style1 input[type="email"],
+.wrapper.style1 input[type="number"],
+.wrapper.style1 input[type="datetime-local"],
 .wrapper.style1 select,
 .wrapper.style1 textarea {
   background-color: rgba(255, 255, 255, 0.075);
@@ -3121,9 +3128,11 @@ button:disabled,
 .wrapper.style3 input[type="text"],
 .wrapper.style3 input[type="password"],
 .wrapper.style3 input[type="email"],
+input[type="datetime-local"],
+input[type="number"],
 .wrapper.style3 select,
 .wrapper.style3 textarea {
-  background-color: rgba(255, 255, 255, 0.075);
+  /* background-color: rgba(255, 255, 255, 0.075); */
 }
 
 .wrapper.style3 select {
@@ -3291,9 +3300,11 @@ button:disabled,
 .wrapper.style5 input[type="text"],
 .wrapper.style5 input[type="password"],
 .wrapper.style5 input[type="email"],
+input[type="datetime-local"],
+input[type="number"],
 .wrapper.style5 select,
 .wrapper.style5 textarea {
-  background-color: rgba(0, 0, 0, 0.0375);
+  /* background-color: rgba(0, 0, 0, 0.0375); */
 }
 
 .wrapper.style5 select {
@@ -3354,7 +3365,7 @@ button:disabled,
 }
 
 .wrapper.style5 table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.0375);
+  /* background-color: rgba(0, 0, 0, 0.0375); */
 }
 
 .wrapper.style5 table th {
@@ -3540,7 +3551,7 @@ body.is-menu-visible #menu {
   -webkit-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
-  background: #2e3842;
+  background: transparent;
   height: 3em;
   left: 0;
   line-height: 3em;
@@ -3893,6 +3904,18 @@ body.is-preload #banner:after {
   #cta .inner .actions {
     max-width: none;
   }
+}
+
+input[type="datetime-local"]:hover::after {
+  content: attr(title);
+  display: block;
+  position: absolute;
+  background-color: #6f6161;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 /* Main */

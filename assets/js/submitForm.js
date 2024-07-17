@@ -20,7 +20,9 @@ document
     const payload = {
       name: formData.get("name"),
       email: formData.get("email"),
-      category: formData.get("category"),
+      organization: formData.get("organization"),
+      phone: formData.get("phone"),
+      time_to_connect: formData.get("date-time"),
       details: formData.get("details"),
       files: [],
     };
