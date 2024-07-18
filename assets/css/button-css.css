@@ -1,144 +1,86 @@
-.hover-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4caf50; /* Green background */
-  color: white; /* White text */
-  border: none; /* Remove borders */
-  padding: 10px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  font-size: 16px; /* Increase font size */
-  margin-top: 10px; /* Space above the button */
-  width: 40px; /* Initial width showing only icon */
-  overflow: hidden; /* Hide text overflow */
-  position: relative; /* Position relative for animation */
-  transition: width 0.3s, background-color 0.3s; /* Smooth transition for width and background color */
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.hover-button .button-text {
-  margin-left: 10px; /* Space between icon and text */
-  white-space: nowrap; /* Prevent text from wrapping */
-  opacity: 0; /* Initially hide the text */
-  transition: opacity 0.3s; /* Smooth transition for text opacity */
-}
-
-.hover-button .icon {
-  font-size: 20px; /* Icon size */
-}
-
-.hover-button:hover {
-  width: 150px; /* Width on hover to show text */
-  background-color: #45a049; /* Darker green on hover */
-}
-
-.hover-button:hover .button-text {
-  opacity: 1; /* Show the text on hover */
-}
-
-/* Animation */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.hover-button .icon,
-.hover-button .button-text {
-  animation: pulse 1s infinite; /* Apply pulse animation to both icon and text */
-}
-
-.spotlight {
+button {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2em;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Mukta", sans-serif;
 }
-
-.spotlight .image {
-  width: 30%; /* Adjust width as per your layout */
-  margin-right: 1em;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+button.learn-more {
+  width: 12rem;
+  height: auto;
 }
-
-.spotlight .image img {
-  width: 100%;
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
   display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #16776f;
+  border-radius: 1.625rem;
 }
-
-.spotlight .content {
-  width: 70%; /* Adjust width as per your layout */
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
-
-.hover-area {
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #28293600;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
 }
-
-.spotlight:hover .hover-area {
-  opacity: 1; /* Show the hover area on spotlight hover */
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
 }
-
-.hover-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: width 0.3s, background-color 0.3s; /* Smooth transition for width and background color */
-  width: 40px; /* Initial width showing only icon */
-  overflow: hidden; /* Hide text overflow */
-}
-
-.hover-button .button-text {
-  margin-left: 10px; /* Space between icon and text */
-  white-space: nowrap; /* Prevent text from wrapping */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s; /* Smooth transition for opacity */
-}
-
-.hover-button:hover .button-text {
-  opacity: 1; /* Show button text on hover */
-}
-
-.hover-button .icon {
-  font-size: 20px; /* Icon size */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s; /* Smooth transition for opacity */
-}
-
-.hover-button:hover .icon {
-  opacity: 1; /* Show icon on hover */
-}
-
-.hover-button:hover {
-  width: 150px; /* Width on hover to show text */
-  background-color: #45a049; /* Darker green on hover */
-}
-
-/* New CSS for Image Scaling on Hover */
-.spotlight .image:hover {
-  transform: scale(1.1); /* Scale the image to 110% on hover */
+button:hover .button-text {
+  color: #fff;
 }

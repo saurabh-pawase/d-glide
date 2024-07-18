@@ -2517,7 +2517,7 @@ button,
   background-color: transparent;
   border-radius: 3px;
   border: 0;
-  box-shadow: inset 0 0 0 2px #fff;
+  /* box-shadow: inset 0 0 0 2px #fff; */
   color: #fff;
   cursor: pointer;
   display: inline-block;
