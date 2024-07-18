@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	D-Glide by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>D-Glide</title>
@@ -14,12 +9,16 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.jpg" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3EasV6tH/yIqXU7Zjq2R5r5C9iOGu5hPST6Kn"
+      crossorigin="anonymous"
+    />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -29,7 +28,6 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <!-- <h1><a href="index.html">D-glide</a></h1> -->
         <nav id="nav">
           <ul>
             <li class="special">
@@ -106,6 +104,7 @@
               Glide offers powerful solutions to enhance decision-making and
               drive success.
             </p>
+            <a href="#two-action1" class="icon solid fa-arrow-right"></a>
           </div>
         </section>
 
@@ -118,6 +117,7 @@
               Data Glide offers cutting-edge technologies to optimize operations
               and drive growth.
             </p>
+            <a href="#two-action2" class="icon solid fa-arrow-right"></a>
           </div>
         </section>
 
@@ -130,6 +130,7 @@
               empower businesses with actionable insights and strategic
               intelligence.
             </p>
+            <a href="#two-action3" class="icon solid fa-arrow-right"></a>
           </div>
         </section>
       </section>
@@ -244,28 +245,34 @@
                     id="date-time"
                     name="date-time"
                     value=""
-                    title="Please select a good time to connect with me"
+                    title="Please select a good date and time to contact you."
                   />
                 </div>
-
                 <div class="col-12">
                   <textarea
                     name="details"
                     id="message"
-                    placeholder="Enter your message"
+                    placeholder="Enter your message here"
                     rows="6"
+                    required
                   ></textarea>
                 </div>
-                <div class="col-6 col-12-small">
+                <div class="col-12">
                   <input type="checkbox" id="copy" name="copy" />
-                  <label for="copy"> Send me an email with a copy.</label>
+                  <label for="copy"
+                    >Email me a copy of the submitted form</label
+                  >
                 </div>
                 <div class="col-12">
                   <ul class="actions">
                     <li>
-                      <input type="submit" value="Submit" class="primary" />
+                      <input
+                        type="submit"
+                        id="submit"
+                        value="Send"
+                        class="primary"
+                      />
                     </li>
-                    <li><input type="reset" value="Reset" /></li>
                   </ul>
                 </div>
               </div>
@@ -314,7 +321,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -322,5 +328,15 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/submitForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      $(document).ready(function () {
+        $("#contact-form").on("submit", function (e) {
+          e.preventDefault();
+          Swal.fire("Good job!", "Your message has been sent!", "success");
+          this.reset();
+        });
+      });
+    </script>
   </body>
 </html>
