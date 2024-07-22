@@ -197,7 +197,7 @@ body,
 input,
 select,
 textarea {
-  color: #ffffff7a;
+  color: #ffffff;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 400;
@@ -1938,7 +1938,7 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: rgba(144, 144, 144, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   border: none;
   color: inherit;
@@ -2039,7 +2039,7 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-  background: rgba(144, 144, 144, 0.25);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   content: "";
   display: inline-block;
@@ -3077,7 +3077,8 @@ button:disabled,
 }
 
 .wrapper.style3 {
-  background-color: #505393;
+  /* created transperent backgraound */
+  /* background-color: #505393; */
   color: #d3d4e4;
 }
 
