@@ -3143,7 +3143,7 @@ input[type="number"],
 
 .wrapper.style3 select option {
   color: #ffffff;
-  background: #505393;
+  background: #000dff;
 }
 
 .wrapper.style3 input[type="checkbox"] + label,
@@ -3734,6 +3734,7 @@ body.is-menu-visible #menu {
 #banner p {
   letter-spacing: 0.225em;
   text-transform: uppercase;
+  filter: drop-shadow(5px 5px 15px rgb(17, 1, 62));
 }
 
 #banner p a {
@@ -4120,7 +4121,8 @@ body.is-mobile.landing #page-wrapper {
 }
 
 body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
+body.is-mobile.landing .wrapper.style4,
+.wrapper.style3 {
   background-image: -moz-linear-gradient(
       top,
       rgba(255, 255, 255, 0.5),
