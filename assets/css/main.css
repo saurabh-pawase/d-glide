@@ -4132,7 +4132,7 @@ body.is-mobile.landing #page-wrapper {
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4,
-.wrapper.style3 {
+body.is-mobile.landing .wrapper.style3 {
   background-image: -moz-linear-gradient(
       top,
       rgba(255, 255, 255, 0.5),
