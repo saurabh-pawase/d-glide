@@ -1119,6 +1119,14 @@ pre code {
   }
 }
 
+.brand-logo {
+  height: 300px;
+  color: white;
+  mix-blend-mode: screen;
+  filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35));
+  pointer-events: none;
+}
+
 @media screen and (max-width: 980px) {
   .row {
     display: flex;
