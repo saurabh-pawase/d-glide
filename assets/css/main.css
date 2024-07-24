@@ -1124,8 +1124,14 @@ pre code {
   color: white !important;
   mix-blend-mode: screen !important;
   -webkit-mix-blend-mode: screen !important;
+  -moz-mix-blend-mode: screen !important;
+  -o-mix-blend-mode: screen !important;
+  -ms-mix-blend-mode: screen !important;
   -webkit-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
   filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+  -moz-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+  -o-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+  -ms-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
   pointer-events: none !important;
 }
 
@@ -4168,4 +4174,38 @@ body.is-mobile.landing #footer {
 
 .custom-select {
   background-color: #58585885;
+}
+
+.brand-logo {
+  height: 300px !important;
+  color: white !important;
+  pointer-events: none !important;
+  mix-blend-mode: screen !important;
+  -webkit-mix-blend-mode: screen !important;
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+  filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .brand-logo {
+    mix-blend-mode: screen !important;
+    -webkit-mix-blend-mode: screen !important;
+    filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+    -webkit-filter: drop-shadow(
+      5px 5px 15px rgba(48, 134, 162, 0.35)
+    ) !important;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .brand-logo {
+      mix-blend-mode: screen !important;
+      -webkit-mix-blend-mode: screen !important;
+      filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
+      -webkit-filter: drop-shadow(
+        5px 5px 15px rgba(48, 134, 162, 0.35)
+      ) !important;
+    }
+  }
 }
