@@ -1120,7 +1120,7 @@ pre code {
 }
 
 .brand-logo {
-  height: 300px !important;
+  height: 180px !important;
   color: white !important;
   mix-blend-mode: screen !important;
   -webkit-mix-blend-mode: screen !important;
@@ -1133,6 +1133,8 @@ pre code {
   -o-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
   -ms-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
   pointer-events: none !important;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 980px) {
@@ -3470,9 +3472,9 @@ input[type="number"],
 }
 
 #menu {
-  -moz-transform: translateX(20em);
-  -webkit-transform: translateX(20em);
-  -ms-transform: translateX(20em);
+  -moz-transform: translateX(-20em);
+  -webkit-transform: translateX(-20em);
+  -ms-transform: translateX(-20em);
   transform: translateX(-20em);
   -moz-transition: -moz-transform 0.5s ease;
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -3521,6 +3523,10 @@ input[type="number"],
 }
 
 @media screen and (max-width: 736px) {
+  #menu {
+    max-width: 40%;
+    width: 30em;
+  }
   #menu ul > li > a {
     line-height: 3em;
   }
@@ -3585,10 +3591,13 @@ body.is-menu-visible #menu {
   -ms-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   height: inherit;
-  right: 1.25em;
+  right: 20px;
   line-height: inherit;
   position: absolute;
-  top: 0;
+  top: 10px;
+}
+#header h1 span {
+  font-size: 10px;
 }
 
 #header h1 a {
