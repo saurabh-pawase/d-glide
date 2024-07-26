@@ -2723,7 +2723,7 @@ button:disabled,
 
 .features li:before {
   display: block;
-  color: #03ac8a;
+  color: #3480b1;
   position: absolute;
   left: 1.75em;
   top: 2.75em;
@@ -2923,7 +2923,7 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #16776f;
+  background-color: #3480b1;
   color: #c8ece9;
 }
 
@@ -2988,7 +2988,7 @@ button:disabled,
 
 .wrapper.style1 select option {
   color: #ffffff;
-  background: #16776f;
+  background: #3480b1;
 }
 
 .wrapper.style1 input[type="checkbox"] + label,
@@ -3004,7 +3004,7 @@ button:disabled,
 .wrapper.style1 input[type="checkbox"]:checked + label:before,
 .wrapper.style1 input[type="radio"]:checked + label:before {
   background: #ffffff;
-  color: #16776f;
+  color: #3480b1;
 }
 
 .wrapper.style1 ::-webkit-input-placeholder {
@@ -3481,7 +3481,7 @@ input[type="number"],
   -ms-transition: -ms-transform 0.5s ease;
   transition: transform 0.5s ease;
   -webkit-overflow-scrolling: touch;
-  background: #16776f;
+  background: #3480b1;
   color: #ffffff;
   height: 100%;
   max-width: 20%;
@@ -3575,7 +3575,7 @@ body.is-menu-visible #menu {
   -webkit-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
-  background: #2e3842;
+  background: #2e384299;
   height: 3em;
   left: 0;
   line-height: 3em;
