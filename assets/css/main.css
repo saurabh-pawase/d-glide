@@ -4185,30 +4185,78 @@ body.is-mobile.landing #footer {
   background-color: #58585885;
 }
 
-/* .brand-logo {
-  height: 300px !important;
-  color: white !important;
-  pointer-events: none !important;
-  -webkit-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
-  filter: drop-shadow(5px 35px 25px rgba(48, 134, 162, 0.35)) !important;
+/* Base styling for the list item */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  touch-action: manipulation; /* Allows for touch interactions on mobile */
 }
 
-@supports (-webkit-touch-callout: none) {
-  .brand-logo {
-    filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
-    -webkit-filter: drop-shadow(
-      5px 5px 15px rgba(48, 134, 162, 0.35)
-    ) !important;
-  }
+/* Tooltip text styling */
+.tooltip-text {
+  visibility: hidden;
+  width: 500px;
+  background: linear-gradient(
+    135deg,
+    #071e2caf,
+    #266f9cdd
+  ); /* Colorful gradient background */
+  color: #ffffff;
+  text-align: left;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for a card effect */
+  padding: 15px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none; /* Prevents tooltip from interfering with mouse events */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .brand-logo {
-      filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
-      -webkit-filter: drop-shadow(
-        5px 5px 15px rgba(48, 134, 162, 0.35)
-      ) !important;
-    }
+/* Heading styling within the tooltip */
+.tooltip-heading {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Content styling within the tooltip */
+.tooltip-content {
+  line-height: 1.6;
+  font-size: 13px; /* Slightly smaller font for the content */
+}
+
+/* Desktop hover effect */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Mobile touch effect */
+.tooltip:focus-within .tooltip-text,
+.tooltip:active .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Optional: Hide tooltip after clicking or tapping elsewhere (requires JS) */
+.tooltip .tooltip-text {
+  display: none;
+}
+
+.tooltip:focus-within .tooltip-text,
+.tooltip:active .tooltip-text {
+  display: block;
+}
+@media screen and (max-width: 480px) {
+  .tooltip-text {
+    width: 200px;
+    top: 130%;
+    left: 50%;
   }
-} */
+}

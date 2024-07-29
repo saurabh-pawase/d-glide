@@ -249,20 +249,73 @@
             </p>
           </header>
           <ul class="icons major">
-            <li title="Industry standard security">
+            <li class="tooltip">
               <span class="icon solid fa-unlock-alt major style1"
                 ><span class="label">Data Visualization</span></span
               >
+              <div class="tooltip-text">
+                <div class="tooltip-heading">Industry standard security</div>
+                <div class="tooltip-content">
+                  In today’s fast-paced technological landscape, the efficiency
+                  of a user interface (UI) directly impacts how quickly new
+                  users can become proficient with a system. Our visually
+                  optimized UI not only enhances usability but also
+                  significantly reduces training time while also increasing
+                  cross operational operator proficiency. Our optimized UI
+                  significantly reduces operator replacement time by making
+                  systems more intuitive, consistent, and supportive. By
+                  enhancing usability, providing clear feedback, and offering
+                  contextual help, we ensure that new operators become
+                  proficient quickly and seamlessly. This not only improves
+                  operational efficiency but also contributes to a smoother
+                  transition and sustained productivity.
+                </div>
+              </div>
             </li>
-            <li title="Visual UI">
-              <span class="icon fa-eye major style2"
-                ><span class="label">Predictive Analytics</span></span
-              >
+            <li class="tooltip">
+              <span class="icon fa-eye major style2">
+                <span class="label">Predictive Analytics</span>
+              </span>
+              <div class="tooltip-text">
+                <div class="tooltip-heading">Visual UI</div>
+                <div class="tooltip-content">
+                  In today’s fast-paced technological landscape, the efficiency
+                  of a user interface (UI) directly impacts how quickly new
+                  users can become proficient with a system. Our visually
+                  optimized UI not only enhances usability but also
+                  significantly reduces training time while also increasing
+                  cross operational operator proficiency. Our optimized UI
+                  significantly reduces operator replacement time by making
+                  systems more intuitive, consistent, and supportive. By
+                  enhancing usability, providing clear feedback, and offering
+                  contextual help, we ensure that new operators become
+                  proficient quickly and seamlessly. This not only improves
+                  operational efficiency but also contributes to a smoother
+                  transition and sustained productivity.
+                </div>
+              </div>
             </li>
-            <li title="Proprietary Native AI">
+            <li class="tooltip">
               <span class="icon solid fa-microchip major style3"
                 ><span class="label">Big Data Solutions</span></span
               >
+              <div class="tooltip-text">
+                <div class="tooltip-heading">Proprietary Native AI</div>
+                <div class="tooltip-content">
+                  Proprietary native AI refers to an artificial intelligence
+                  system developed and owned exclusively by us. Unlike
+                  off-the-shelf AI solutions or third-party AI platforms, our
+                  proprietary native AI is custom-built to meet the unique needs
+                  and requirements of our customers.<br />
+                  This allows us to be able to customize the ai functionality to
+                  deliver results not conceivable with off the shelf
+                  applications, while at the same delivering high levels of
+                  control and security. This system also allows us to integrate
+                  with your existing systems to be able to offer seamless
+                  transition while delivering Innovations that you could dream
+                  possible with AI.
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -414,13 +467,27 @@
         });
       });
     </script>
-    <!-- <script>
-      const logo = document.getElementById("logo");
-      const supportsMixBlendMode = CSS.supports("mix-blend-mode", "screen");
+    <script>
+      document.addEventListener("click", function (event) {
+        const tooltips = document.querySelectorAll(".tooltip");
+        tooltips.forEach((tooltip) => {
+          const tooltipText = tooltip.querySelector(".tooltip-text");
+          if (tooltipText && !tooltip.contains(event.target)) {
+            tooltipText.style.display = "none";
+          }
+        });
+      });
 
-      if (!supportsMixBlendMode) {
-        logo.style.mixBlendMode = "initial"; // Or any other fallback styling
-      }
-    </script> -->
+      document.querySelectorAll(".tooltip").forEach((element) => {
+        element.addEventListener("click", function (event) {
+          event.stopPropagation();
+          const tooltipText = this.querySelector(".tooltip-text");
+          if (tooltipText) {
+            tooltipText.style.display =
+              tooltipText.style.display === "block" ? "none" : "block";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
