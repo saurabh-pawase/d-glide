@@ -2607,7 +2607,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-  background-color: #ed4933;
+  background-color: #266e9c;
   box-shadow: none !important;
   color: #ffffff !important;
 }
@@ -2617,7 +2617,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #ef5e4a !important;
+  background-color: #3795cf !important;
 }
 
 input[type="submit"].primary:active,
@@ -2625,7 +2625,7 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color: #eb341c !important;
+  background-color: #266e9c !important;
 }
 
 input[type="submit"].disabled,
@@ -2723,7 +2723,7 @@ button:disabled,
 
 .features li:before {
   display: block;
-  color: #3480b1;
+  color: #266e9c;
   position: absolute;
   left: 1.75em;
   top: 2.75em;
@@ -2923,7 +2923,7 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #3480b1;
+  background-color: #266e9c;
   color: #c8ece9;
 }
 
@@ -2988,7 +2988,7 @@ button:disabled,
 
 .wrapper.style1 select option {
   color: #ffffff;
-  background: #3480b1;
+  background: #266e9c;
 }
 
 .wrapper.style1 input[type="checkbox"] + label,
@@ -3004,7 +3004,7 @@ button:disabled,
 .wrapper.style1 input[type="checkbox"]:checked + label:before,
 .wrapper.style1 input[type="radio"]:checked + label:before {
   background: #ffffff;
-  color: #3480b1;
+  color: #266e9c;
 }
 
 .wrapper.style1 ::-webkit-input-placeholder {
@@ -3097,7 +3097,7 @@ button:disabled,
 .wrapper.style3 {
   /* created transperent backgraound */
   /* background-color: #505393; */
-  color: #d3d4e4;
+  /* color: #d3d4e4; */
 }
 
 .wrapper.style3 strong,
@@ -3138,7 +3138,7 @@ button:disabled,
 }
 
 .wrapper.style3 header.major p {
-  color: #d3d4e4;
+  color: #ffffff;
 }
 
 .wrapper.style3 label {
@@ -3481,7 +3481,7 @@ input[type="number"],
   -ms-transition: -ms-transform 0.5s ease;
   transition: transform 0.5s ease;
   -webkit-overflow-scrolling: touch;
-  background: #3480b1;
+  background: #266e9c;
   color: #ffffff;
   height: 100%;
   max-width: 20%;
@@ -3759,7 +3759,7 @@ body.is-menu-visible #menu {
 #banner p {
   letter-spacing: 0.225em;
   text-transform: uppercase;
-  filter: drop-shadow(5px 5px 15px rgb(17, 1, 62));
+  filter: drop-shadow(5px 5px 10px #266e9c);
 }
 
 #banner p a {
@@ -3952,26 +3952,26 @@ input[type="datetime-local"]:hover::after {
   padding: 12em 0 10em 0;
   background-image: -moz-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: -webkit-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: -ms-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-attachment: fixed;
@@ -4108,26 +4108,26 @@ body.is-mobile #main > header {
 body.landing #page-wrapper {
   background-image: -moz-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: -webkit-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: -ms-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
-  background-image: linear-gradient(
+  background-image: -ms-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-attachment: fixed;
@@ -4150,26 +4150,26 @@ body.is-mobile.landing .wrapper.style4,
 body.is-mobile.landing .wrapper.style3 {
   background-image: -moz-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: -webkit-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: -ms-linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-image: linear-gradient(
       top,
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/banner.jpg");
   background-position: center center;
@@ -4191,9 +4191,9 @@ body.is-mobile.landing #footer {
   pointer-events: none !important;
   -webkit-filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
   filter: drop-shadow(5px 35px 25px rgba(48, 134, 162, 0.35)) !important;
-} */
+}
 
-/* @supports (-webkit-touch-callout: none) {
+@supports (-webkit-touch-callout: none) {
   .brand-logo {
     filter: drop-shadow(5px 5px 15px rgba(48, 134, 162, 0.35)) !important;
     -webkit-filter: drop-shadow(
