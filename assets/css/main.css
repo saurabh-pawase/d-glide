@@ -2193,9 +2193,41 @@ input[type="radio"] + label:before {
   font-size: 1.5em;
 }
 
+.icon.major svg {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1680px) {
+  .icon.major svg {
+    height: 29px;
+    width: 29px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .icon.major svg {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .icon.major svg {
+    height: 22px;
+    width: 22px;
+  }
+}
+
 @media screen and (max-width: 736px) {
   .icon.major {
     font-size: 1em;
+  }
+  .icon.major svg {
+    height: 18px;
+    width: 18px;
   }
 }
 
